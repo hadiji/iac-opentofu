@@ -295,7 +295,7 @@ module "nsg-Inbound-Deny" {
   network_security_group_id      =  module.nsg-Inbound-Deny.nsg_id
 }
 */
-module "gateway_vpn" {
+/*module "gateway_vpn" {
   source                = "./Modules/gateway_VPN"
   name                  = "${var.resource_prefix}GATEWAY-VPN${var.resource_postfix}"
   location              = var.location
@@ -304,7 +304,7 @@ module "gateway_vpn" {
   tags                    = {
     env = var.resource_postfix
   }
-}
+}*/
 /*
 module "bastion_host" {
   source                       = "./modules/bastion_host"
